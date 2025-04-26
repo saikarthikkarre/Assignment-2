@@ -55,6 +55,12 @@ const Home = () => {
                 <p>ID: {student.studentId}</p>
                 <p>Email: {student.email}</p>
                 <p>Department: {student.department || 'N/A'}</p>
+                <p>
+                  Is Active:{" "}
+                  <span style={{ color: student.isActive ? "green" : "red" }}>
+                    {student.isActive ? "Yes" : "No"}
+                  </span>
+                </p>
               </div>
             </div>
           ))
